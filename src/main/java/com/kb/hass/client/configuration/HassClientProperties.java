@@ -1,4 +1,4 @@
-package com.hass.client.configuration;
+package com.kb.hass.client.configuration;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
