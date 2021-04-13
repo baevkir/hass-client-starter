@@ -27,4 +27,12 @@ public class StateClient {
                 .retrieve()
                 .bodyToMono(State.class);
     }
+
+    public Mono<State> updateState(String entityId, State state) {
+        return webClient.post()
+                .uri("/states/" + entityId)
+                .bodyValue(state)
+                .retrieve()
+                .bodyToMono(State.class);
+    }
 }
