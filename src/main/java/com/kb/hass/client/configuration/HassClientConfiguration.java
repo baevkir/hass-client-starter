@@ -1,5 +1,6 @@
 package com.kb.hass.client.configuration;
 
+import com.kb.hass.client.service.ServiceClient;
 import com.kb.hass.client.service.StateClient;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -26,5 +27,10 @@ public class HassClientConfiguration {
     @Bean
     public StateClient stateClient(WebClient webClient) {
         return new StateClient(webClient);
+    }
+
+    @Bean
+    public ServiceClient serviceClient(WebClient webClient) {
+        return new ServiceClient(webClient);
     }
 }
