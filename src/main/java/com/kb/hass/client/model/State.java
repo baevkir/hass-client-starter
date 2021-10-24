@@ -21,5 +21,7 @@ public class State {
     private String entityId;
     private String state;
     private String temperature;
+    @JsonProperty("hvac_mode")
+    private String hvacMode;
     private Map<String, Object> attributes;
 }
