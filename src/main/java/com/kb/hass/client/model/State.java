@@ -20,5 +20,6 @@ public class State {
     @JsonProperty("entity_id")
     private String entityId;
     private String state;
+    private String temperature;
     private Map<String, Object> attributes;
 }
