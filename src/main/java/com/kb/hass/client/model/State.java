@@ -18,6 +18,7 @@ public class State {
     @JsonProperty("entity_id")
     private String entityId;
     private String state;
+    private Object value;
     private String temperature;
     @JsonProperty("hvac_mode")
     private String hvacMode;
